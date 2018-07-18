@@ -8,7 +8,7 @@ def index(request):
 
 def rsop(request):
     projects = Project.objects.all()
-    return render(request, 'main/rsop.html', {'project': p})
+    return render(request, 'main/rsop.html', {'projects': projects})
 
 
 def project(request, pk):

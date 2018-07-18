@@ -12,7 +12,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
 
+    <script type='application/javascript' src='/path/to/fastclick.js'></script>
+
     <link rel="stylesheet" type="text/css" href="{% static 'main/index.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'main/rsop.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'main/project.css' %}">
 </head>
 <body>
     <nav class="bar navbar navbar-expand-lg navbar-light">
@@ -26,13 +30,25 @@
             <div class="rsop-front col-11 col-md-8">
                 <h1 class="rsop-title"><span>Release</span> Summer of Projects 2018</h1>
                 <p class="rsop-subtitle">"컴공까지 왔는데 하고 싶은걸 해봐야지"</p>
-                <a href="google.com" class="rsop-button">프로젝트 라인업 보러가기</a>
+                <p class="rsop-copy">Release Summer of Projects 2018: 2달 동안 Release 부원들과 프로젝트를 진행하며 각종 세미나 및 중간 발표 행사, 모각코 행사에 참여하고 선후배들과 피드백을 주고받고 프로젝트를 발전시켜 나가보세요.</p>
             </div>
             <div class="rsop-back">
                 <img class="rsop-back-img" src="{% static 'rsop-background.jpg' %}">
             </div>
         </div>
+        <div class="row project-row justify-content-center">
+            <div class="col-11 col-md-11">
+                <h1 class="col-header">참가 프로젝트</h1>
+            </div>
+            {% for project in projects %}
+                <div class="col-10 col-md-6 project-box">
+                    <h1 class="project-box-name">{{ project.name }}</h1>
+                    <p class="project-box-members">팀원: {{ project.members }}</p>
+                    <p class="project-box-summary">{{  project.summary }}</p>
+                    <a href="{% url 'rsop-projects' pk=project.pk %}" class="project-box-link">톺아보기</a>
+                </div>
+            {% endfor %}
+        </div>
     </div>
-
 </body>
 </html>

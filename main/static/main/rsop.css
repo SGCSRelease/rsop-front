@@ -1,0 +1,66 @@
+.rsop-title-eyebrow {
+    font-weight: 300;
+    font-size: 16px;
+    color: white;
+    margin-top: 36px;
+}
+
+.rsop-hero {
+    font-size: 18px;
+    color: white;
+    margin-top: 4px;
+}
+
+.rsop-copy {
+    font-weight: 300;
+    font-size: 13px;
+    color: white;
+    margin-top: 32px;
+    width: 70%;
+}
+
+.project-row {
+    background-color: #EEE;
+    margin: 0;
+}
+
+.project-box {
+    margin-top: 8px;
+    box-shadow: 0 16px 64px #0003;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.project-box:last-child {
+    margin-bottom: 36px;
+}
+
+.project-box-name {
+    margin-top: 54px;
+    font-weight: 500;
+    font-size: 20px;
+    color: black;
+}
+
+.project-box-members {
+    font-size: 12px;
+    font-style: italic;
+    color: #666;
+    margin: 4px 0 12px;
+}
+
+.project-box-summary {
+    border-top: black solid 0.5px;
+    padding-top: 12px;
+    font-size: 14px;
+    color: #222;
+}
+
+.project-box-link {
+    margin: 32px 8px 24px;
+    text-align: right;
+    font-weight: 700;
+    font-size: 16px;
+    color: #ff8600;
+    display: block;
+}
