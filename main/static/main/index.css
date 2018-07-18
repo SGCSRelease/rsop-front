@@ -11,13 +11,13 @@ body {
 }
 
 .bar-logo {
-    height: 20px;
-    margin: 24px;
+    height: 24px;
+    margin: 12px;
 }
 
 .bar-logo-image {
-    height: 20px;
-    margin: 0 12px 4px 0;
+    height: 14px;
+    margin: 0 8px 2px 0;
     display: inline;
     vertical-align: middle;
 }
@@ -25,7 +25,7 @@ body {
 .bar-logo-text {
     font-family: "Noto Sans CJK KR", sans-serif;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 14px;
     color: white;
     display: inline;
     vertical-align: middle;
