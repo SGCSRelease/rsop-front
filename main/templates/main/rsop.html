@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Release</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'main/index.css' %}">
+</head>
+<body>
+    <nav class="bar navbar navbar-expand-lg navbar-light">
+        <div class="bar-logo">
+            <img class="bar-logo-image" src="{% static 'release-white.png' %}">
+            <span class="bar-logo-text">RELEASE</span>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row rsop-row justify-content-center">
+            <div class="rsop-front col-11 col-md-8">
+                <h1 class="rsop-title"><span>Release</span> Summer of Projects 2018</h1>
+                <p class="rsop-subtitle">"컴공까지 왔는데 하고 싶은걸 해봐야지"</p>
+                <a href="google.com" class="rsop-button">프로젝트 라인업 보러가기</a>
+            </div>
+            <div class="rsop-back">
+                <img class="rsop-back-img" src="{% static 'rsop-background.jpg' %}">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
