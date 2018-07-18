@@ -24,15 +24,15 @@
     margin: 0;
 }
 
+.project-row:last-child {
+    padding-bottom: 36px;
+}
+
 .project-box {
-    margin-top: 8px;
+    margin: 16px 12px 0;
     box-shadow: 0 16px 64px #0003;
     background-color: white;
     border-radius: 4px;
-}
-
-.project-box:last-child {
-    margin-bottom: 36px;
 }
 
 .project-box-name {

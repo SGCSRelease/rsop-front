@@ -108,10 +108,11 @@ body {
 
 @media (min-width: 768px) {
     .rsop-row {
-        height: 240px;
+        height: 400px;
     }
+
     .rsop-title {
-        margin-top: 96px;
+        margin-top: 80px;
         font-weight: 200;
         font-size: 32px;
     }

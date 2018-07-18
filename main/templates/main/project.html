@@ -17,10 +17,10 @@
 </head>
 <body>
 <nav class="bar navbar navbar-expand-lg navbar-light">
-    <div class="bar-logo">
+    <a class="bar-logo" href="{%  url 'rsop' %}">
         <img class="bar-logo-image" src="{% static 'release-white.png' %}">
         <span class="bar-logo-text">RELEASE</span>
-    </div>
+    </a>
 </nav>
 <div class="container-fluid">
     <div class="row project-hero-row justify-content-center">
@@ -50,18 +50,14 @@
         <div class="col-11 col-md-8 feedback-col">
             <h1 class="col-header">피드백</h1>
         </div>
-    </div>
-    {% for feedback in project.feedback_set.all %}
-        <div class="row feedback-row justify-content-center">
-            <div class="col-10 col-md-6 feedback-box">
+        {% for feedback in project.feedback_set.all %}
+            <div class="col-10 col-md-8 feedback-box">
                 <h1 class="feedback-name">{{ feedback.name }}<span class="feedback-date">{{ feedback.creation_time }}</span></h1>
                 <p class="feedback-content">{{  feedback.content }}</p>
             </div>
-        </div>
-    {% endfor %}
-    <div class="row feedback-row justify-content-center">
-        <div class="col-5"></div>
-        <div class="col-5 feedback-button-box">
+        {% endfor %}
+        <div class="col-5 col-md-6"></div>
+        <div class="col-5 col-md-2 feedback-button-box">
             <a class="btn btn-primary feedback-button" href="{%  url 'rsop-project-feedback' pk=project.pk %}">
                 피드백 등록하기
             </a>

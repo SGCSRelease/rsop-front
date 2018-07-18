@@ -20,10 +20,10 @@
 </head>
 <body>
     <nav class="bar navbar navbar-expand-lg navbar-light">
-        <div class="bar-logo">
+        <a class="bar-logo" href="{%  url 'rsop' %}">
             <img class="bar-logo-image" src="{% static 'release-white.png' %}">
             <span class="bar-logo-text">RELEASE</span>
-        </div>
+        </a>
     </nav>
     <div class="container-fluid">
         <div class="row rsop-row justify-content-center">
@@ -37,11 +37,13 @@
             </div>
         </div>
         <div class="row project-row justify-content-center">
-            <div class="col-11 col-md-11">
+            <div class="col-11 col-md-8">
                 <h1 class="col-header">참가 프로젝트</h1>
             </div>
+        </div>
+        <div class="row project-row justify-content-center">
             {% for project in projects %}
-                <div class="col-10 col-md-6 project-box">
+                <div class="col-10 col-md-4 project-box">
                     <h1 class="project-box-name">{{ project.name }}</h1>
                     <p class="project-box-members">팀원: {{ project.members }}</p>
                     <p class="project-box-summary">{{  project.summary }}</p>
