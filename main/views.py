@@ -3,7 +3,7 @@ from main.models import Project, Feedback
 
 
 def index(request):
-    return render(request, 'main/index.html')
+    return redirect('rsop')
 
 
 def rsop(request):
