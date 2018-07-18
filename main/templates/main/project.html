@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{{ project.name }} - RSoP2018</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'main/index.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'main/project.css' %}">
+</head>
+<body>
+<nav class="bar navbar navbar-expand-lg navbar-light">
+    <div class="bar-logo">
+        <img class="bar-logo-image" src="{% static 'release-white.png' %}">
+        <span class="bar-logo-text">RELEASE</span>
+    </div>
+</nav>
+<div class="container-fluid">
+    <div class="row rsop-row justify-content-center">
+        <div class="rsop-front col-11 col-md-8">
+            <h1 class="project-header">
+                <span class="project-eyebrow">RSoP2018 Project</span>
+                <span class="project-name">{{ project.name }}</span>
+            </h1>
+            <p class="project-summary">{{ project.summary }}</p>
+        </div>
+        <div class="rsop-back">
+            <img class="rsop-back-img" src="{% static 'rsop-background.jpg' %}">
+        </div>
+    </div>
+    <div class="row intro-content-row justify-content-center">
+        <div class="col-11 col-md-8 intro-content-col">
+            <h1 class="col-header">프로젝트 상세</h1>
+            <h2 class="intro-content-header">프로젝트 참가자</h2>
+            <p class="intro-content">{{  project.members }}</p>
+            <h2 class="intro-content-header">프로젝트 설명</h2>
+            <p class="intro-content">{{  project.description }}</p>
+            <h2 class="intro-content-header">기획서 링크</h2>
+            <a href='{{ project.link }}' class="intro-link">{{  project.link }}</a>
+        </div>
+    </div>
+    <div class="row feedback-row justify-content-center">
+        <div class="col-11 col-md-8 feedback-col">
+            <h1 class="col-header">피드백</h1>
+        </div>
+    </div>
+    {% for feedback in project.feedback_set.all %}
+        <div class="row feedback-row justify-content-center">
+            <div class="col-10 col-md-6 feedback-box">
+                <h1 class="feedback-name">{{ feedback.name }}<span class="feedback-date">{{ feedback.creation_time }}</span></h1>
+                <p class="feedback-content">{{  feedback.content }}</p>
+            </div>
+        </div>
+    {% endfor %}
+    <div class="row feedback-row justify-content-center">
+        <div class="col-5"></div>
+        <div class="col-5 feedback-button-box">
+            <button class="btn btn-primary feedback-button">
+                피드백 등록하기
+            </button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

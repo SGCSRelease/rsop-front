@@ -1,0 +1,132 @@
+.project-header {
+    margin-top: 32px;
+}
+
+.project-eyebrow {
+    font-weight: 300;
+    font-size: 14px;
+    color: #ffd900;
+    display: block;
+}
+
+.project-name {
+    font-weight: 400;
+    font-size: 28px;
+    margin-top: 4px;
+    color: white;
+    display: block;
+}
+
+.project-summary {
+    font-weight: 400;
+    font-size: 13px;
+    margin-top: 12px;
+    color: white;
+    display: block;
+}
+
+
+.col-header {
+    font-weight: 400;
+    font-size: 24px;
+    margin-top: 30px;
+    color: black;
+}
+
+.intro-content-row {
+    background-color: white;
+    margin: 0;
+}
+
+.intro-content-header {
+    font-weight: 700;
+    font-size: 13px;
+    margin-top: 24px;
+    color: black;
+}
+
+.intro-content-header:first-child {
+    margin-top: 30px;
+}
+
+
+.intro-content {
+    font-weight: 400;
+    font-size: 13px;
+    margin-top: 4px;
+    color: #040404;
+}
+
+.intro-link {
+    font-weight: 500;
+    font-size: 13px;
+    margin-top: 4px;
+    color: #ff8600;
+}
+
+.intro-content-col {
+    margin: 12px 0 24px;
+}
+
+.feedback-row {
+    background-color: #EEE;
+    margin: 0;
+}
+
+.feedback-box {
+    margin-top: 8px;
+    box-shadow: 0 16px 64px #0003;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.feedback-name {
+    margin-top: 16px;
+    font-weight: 500;
+    font-size: 13px;
+    color: black;
+}
+
+.feedback-date {
+    font-weight: 400;
+    margin-left: 4px;
+    color: #888;
+}
+
+.feedback-content {
+    margin-top: 8px;
+    margin-bottom: 12px;
+    font-weight: 400;
+    font-size: 13px;
+    color: #222;
+}
+
+.feedback-button-col {
+    margin: 0;
+}
+
+.feedback-button-box {
+    margin: 8px;
+    box-shadow: 0 16px 64px #0003;
+    border-radius: 4px;
+    padding: 0;
+}
+
+.feedback-button {
+    font-weight: 600;
+    font-size: 13px;
+    width: 100%;
+    height: 48px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: #ff8600;
+    border: none;
+    border-radius: 4px;
+}
+
+.feedback-button:hover, .feedback-button:active {
+    background-color: #D03500;
+}
+

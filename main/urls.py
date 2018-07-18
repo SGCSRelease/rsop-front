@@ -4,5 +4,5 @@ from main import views
 urlpatterns = [
     path('index', views.index, name='index'),
     path('rsop2018', views.index, name='rsop'),
-    path('rsop2018/projects', views.index, name='rsop-projects'),
+    path('rsop2018/projects/<int:project_pk>', views.project, name='rsop-projects'),
 ]
