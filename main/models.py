@@ -16,7 +16,7 @@ class Project(models.Model):
 
 
 class Feedback(models.Model):
-    creation_time = models.DateTimeField()
+    creation_time = models.DateTimeField(auto_now=True)
     name = models.CharField(max_length=256)
     content = models.TextField()
     project = models.ForeignKey(Project, on_delete=models.CASCADE)

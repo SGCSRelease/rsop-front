@@ -106,7 +106,7 @@
 }
 
 .feedback-button-box {
-    margin: 8px;
+    margin: 8px 0 72px;
     box-shadow: 0 16px 64px #0003;
     border-radius: 4px;
     padding: 0;
@@ -116,10 +116,8 @@
     font-weight: 600;
     font-size: 13px;
     width: 100%;
-    height: 48px;
     text-align: center;
-    margin: 0;
-    padding: 0;
+    padding: 16px 0;
     color: white;
     background-color: #ff8600;
     border: none;

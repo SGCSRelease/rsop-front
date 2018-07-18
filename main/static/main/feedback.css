@@ -1,0 +1,27 @@
+body {
+    background-color: white;
+}
+
+.feedback-form-label {
+    font-weight: 400;
+    font-size: 15px;
+    color: black;
+    margin-top: 8px;
+}
+
+.feedback-submit-button {
+    font-weight: 600;
+    font-size: 13px;
+    width: 100%;
+    text-align: center;
+    padding: 16px 0;
+    color: white;
+    background-color: #ff8600;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 32px;
+}
+
+.feedback-submit-button:hover, .feedback-submit-button:active {
+    background-color: #D03500;
+}
