@@ -1,0 +1,52 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: black;
+}
+
+.bar {
+    background-color: black;
+    border-bottom: 0.5px solid white;
+}
+
+.bar-logo {
+    height: 20px;
+    margin: 24px;
+}
+
+.bar-logo-image {
+    height: 20px;
+    margin: 0 12px 4px 0;
+    display: inline;
+    vertical-align: middle;
+}
+
+.bar-logo-text {
+    font-family: "Noto Sans CJK KR", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+    display: inline;
+    vertical-align: middle;
+}
+
+@media (min-width: 768px) {
+    .bar-logo {
+        height: 20px;
+        margin: 24px;
+    }
+
+    .bar-logo-image {
+        height: 20px;
+        margin: 0 12px 4px 0;
+    }
+
+    .bar-logo-text {
+        font-weight: 700;
+        font-size: 18px;
+    }
+}
+
+
+
