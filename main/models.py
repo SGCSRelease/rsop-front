@@ -3,8 +3,10 @@ from django.db import models
 
 class Project(models.Model):
     name = models.CharField(max_length=256)
-    summary = models.CharField(max_length=1024)
     description = models.TextField()
+    goal = models.TextField(default='')
+    reason = models.TextField(default='')
+    plan = models.TextField(default='')
     members = models.CharField(max_length=256)
     link = models.CharField(max_length=1024)
     color_r = models.FloatField()

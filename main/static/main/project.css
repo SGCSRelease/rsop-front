@@ -44,9 +44,16 @@
 
 .intro-content-header {
     font-weight: 700;
-    font-size: 13px;
+    font-size: 14px;
     margin-top: 24px;
     color: black;
+}
+
+.intro-content-subheader {
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 14px;
+    color: #444;
 }
 
 .intro-content-header:first-child {

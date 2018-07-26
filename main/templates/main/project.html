@@ -29,7 +29,7 @@
                 <span class="project-eyebrow">RSoP2018 Project</span>
                 <span class="project-name">{{ project.name }}</span>
             </h1>
-            <p class="project-summary">{{ project.summary }}</p>
+            <p class="project-summary">{{ project.description }}</p>
         </div>
         <div class="rsop-back">
             <img class="rsop-back-img" src="{% static 'rsop-background.jpg' %}">
@@ -40,9 +40,16 @@
             <h1 class="col-header">프로젝트 상세</h1>
             <h2 class="intro-content-header">프로젝트 팀원</h2>
             <p class="intro-content">{{  project.members }}</p>
-            <h2 class="intro-content-header">프로젝트 설명</h2>
+            <h2 class="intro-content-header">프로젝트 소개</h2>
             <p class="intro-content">{{  project.description }}</p>
-            <h2 class="intro-content-header">기획서 링크</h2>
+            <h2 class="intro-content-header">기획 상세</h2>
+            <h2 class="intro-content-subheader">프로젝트 목적</h2>
+            <p class="intro-content">{{  project.goal}}</p>
+            <h2 class="intro-content-subheader">주제 선정 이유</h2>
+            <p class="intro-content">{{  project.reason}}</p>
+            <h2 class="intro-content-subheader">진행 계획</h2>
+            <p class="intro-content">{{  project.plan}}</p>
+            <h2 class="intro-content-header">초기 기획서</h2>
             <a href='{{ project.link }}' class="intro-link">{{  project.link }}</a>
         </div>
     </div>
