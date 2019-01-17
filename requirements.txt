@@ -1,1 +1,1 @@
-django==2.*
+Django>=2
